@@ -3,16 +3,16 @@ package Board;
 public class Board {
 
 
-    private int[][] board = new int[9][9];
+    private String[][] board = new String[9][8];
 
-    public Board(int[][] board) {
+    public Board(String[][] board) {
         this.board = board;
     }
 
     public Board() {
     }
 
-    public int[][] getBoard() {
+    public String[][] getBoard() {
         return board;
     }
 

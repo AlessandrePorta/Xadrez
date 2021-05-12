@@ -2,7 +2,7 @@ package Pieces;
 
 public class Pawn {
 
-    private Integer movimentoPawn;
+    private Integer movementPawn;
 
 
 }
