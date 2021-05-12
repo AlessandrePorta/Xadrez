@@ -3,7 +3,7 @@ package Board;
 public class Board {
 
 
-    private String[][] board = new String[9][8];
+    private String[][] board = new String[10][8];
 
     public Board(String[][] board) {
         this.board = board;
