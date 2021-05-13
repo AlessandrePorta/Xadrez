@@ -2,8 +2,8 @@ package Board;
 
 public class Board {
 
-
     private String[][] board = new String[9][8];
+
 
     public Board(String[][] board) {
         this.board = board;
@@ -14,6 +14,10 @@ public class Board {
 
     public String[][] getBoard() {
         return board;
+    }
+
+    public void setBoard(String[][] board) {
+        this.board = board;
     }
 
     public String toString(){

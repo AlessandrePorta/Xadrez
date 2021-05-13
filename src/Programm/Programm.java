@@ -1,7 +1,6 @@
 package Programm;
 
 import Board.*;
-import Pieces.Pawn;
 
 import java.util.Locale;
 import java.util.Scanner;
