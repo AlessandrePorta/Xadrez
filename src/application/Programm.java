@@ -1,6 +1,6 @@
-package Programm;
+package application;
 
-import Chess.ChessMatch;
+import chess.ChessMatch;
 
 import java.util.Locale;
 import java.util.Scanner;

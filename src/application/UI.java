@@ -1,7 +1,7 @@
-package Programm;
+package application;
 
-import Chess.ChessPiece;
-import Chess.Color;
+import chess.ChessPiece;
+import chess.Color;
 
 public class UI {
 
