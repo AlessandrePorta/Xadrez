@@ -1,6 +1,7 @@
 package Programm;
 
 import Board.*;
+import Pieces.Position;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Programm {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
+        Position position = new Position("P", "T", "H", "B", "Q", "K");
         Board board = new Board();
         String[][] lista = board.getBoard();
         int[] column = new int[9];
@@ -24,27 +26,30 @@ public class Programm {
         lista[0][6] = "g";
         lista[0][7] = "h";
 
+        for (int l = 1; l<=lista.length; l++){
+
+        }
         //Setting - Tower
-        lista[1][0] = "T";
-        lista[8][0] = "T";
-        lista[1][7] = "T";
-        lista[8][7] = "T";
+        lista[1][0] = position.getTower();
+        lista[8][0] = position.getTower();
+        lista[1][7] = position.getTower();
+        lista[8][7] = position.getTower();
         //Setting - Horse
-        lista[1][1] = "H";
-        lista[8][1] = "H";
-        lista[1][6] = "H";
-        lista[8][6] = "H";
+        lista[1][1] = position.getHorse();
+        lista[8][1] = position.getHorse();
+        lista[1][6] = position.getHorse();
+        lista[8][6] = position.getHorse();
         //Setting - Bishop
-        lista[1][2] = "B";
-        lista[8][2] = "B";
-        lista[1][5] = "B";
-        lista[8][5] = "B";
+        lista[1][2] = position.getBishop();
+        lista[8][2] = position.getBishop();
+        lista[1][5] = position.getBishop();
+        lista[8][5] = position.getBishop();
         //Setting - Queen
-        lista[1][4] = "Q";
-        lista[8][3] = "Q";
+        lista[1][4] = position.getQueen();
+        lista[8][3] = position.getQueen();
         //Setting - King
-        lista[1][3] = "K";
-        lista[8][4] = "K";
+        lista[1][3] = position.getKing();
+        lista[8][4] = position.getKing();
 
 
         for (int linha = 0; linha <= lista.length - 1; linha++) {
@@ -57,10 +62,9 @@ public class Programm {
         }
 
         for (int n = 0; n < lista.length - 1; n++) {
-            String p = new String("P");
-            lista[2][n] = p;
+            lista[2][n] = "P";
             for (int m = 0; m < lista.length - 1; m++){
-                lista[7][m] = p;
+                lista[7][m] = "P";
             }
         }
 

@@ -18,6 +18,7 @@ public class Board {
 
     public void setBoard(String[][] board) {
         this.board = board;
+
     }
 
     public String toString(){
