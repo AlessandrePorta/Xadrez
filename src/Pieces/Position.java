@@ -2,67 +2,32 @@ package Pieces;
 
 public class Position {
 
-    private String pawn = "P";
-    private String tower = "T";
-    private String horse = "H";
-    private String bishop = "B";
-    private String queen = "Q";
-    private String king = "K";
+    private int line;
+    private int column;
 
-    public Position(String pawn, String tower, String horse, String bishop, String queen, String king) {
-        this.pawn = pawn;
-        this.tower = tower;
-        this.horse = horse;
-        this.bishop = bishop;
-        this.queen = queen;
-        this.king = king;
+    public Position(int line, int column) {
+        this.line = line;
+        this.column = column;
     }
 
-    public String getPawn() {
-        return pawn;
+    public int getLine() {
+        return line;
     }
 
-    public void setPawn(String pawn) {
-        this.pawn = pawn;
+    public void setLine(int line) {
+        this.line = line;
     }
 
-    public String getTower() {
-        return tower;
+    public int getColumn() {
+        return column;
     }
 
-    public void setTower(String tower) {
-        this.tower = tower;
+    public void setColumn(int column) {
+        this.column = column;
     }
 
-    public String getHorse() {
-        return horse;
-    }
-
-    public void setHorse(String horse) {
-        this.horse = horse;
-    }
-
-    public String getBishop() {
-        return bishop;
-    }
-
-    public void setBishop(String bishop) {
-        this.bishop = bishop;
-    }
-
-    public String getQueen() {
-        return queen;
-    }
-
-    public void setQueen(String queen) {
-        this.queen = queen;
-    }
-
-    public String getKing() {
-        return king;
-    }
-
-    public void setKing(String king) {
-        this.king = king;
+    @Override
+    public String toString(){
+        return line + "," + column;
     }
 }
