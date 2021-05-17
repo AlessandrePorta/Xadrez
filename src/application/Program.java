@@ -18,7 +18,7 @@ public class Program {
         while(true) {
             UI.printBoard(chessMatch.getPieces());
             System.out.println();
-            System.out.print("Qual peça deseja mover: ");
+            System.out.print("Qual peca deseja mover: ");
             ChessPosition source = UI.readChessPosition(sc);
 
             System.out.println();
