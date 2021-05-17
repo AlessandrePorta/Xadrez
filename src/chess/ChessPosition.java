@@ -26,12 +26,13 @@ public class ChessPosition {
     protected Position toPosition() {
         return new Position(8 - line, column - 'a');
     }
-    protected static ChessPosition fromPosition(Position position){
+
+    protected static ChessPosition fromPosition(Position position) {
         return new ChessPosition((char) ('a' - position.getColumn()), 8 - position.getLine());
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "" + column + line;
     }
 }
