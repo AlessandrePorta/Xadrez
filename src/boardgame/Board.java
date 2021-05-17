@@ -47,7 +47,7 @@ public class Board {
 
     public Piece removePiece(Position position){
         if (!positionExists(position)){
-            throw new BoardException("Posição não existe no tabuleiro.");
+            throw new BoardException("Posicao nao existe no tabuleiro.");
         }
         if(piece(position) == null){
             return null;
@@ -68,7 +68,7 @@ public class Board {
 
     public boolean thereIsAPiece(Position position){
         if(!positionExists(position)) {
-            throw new BoardException("Posição não existe no tabuleiro.");
+            throw new BoardException("Posicao nao existe no tabuleiro.");
         }
         return piece(position) != null;
     }
