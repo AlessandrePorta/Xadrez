@@ -25,6 +25,9 @@ public class Program {
                 System.out.print("Qual peca deseja mover: ");
                 ChessPosition source = UI.readChessPosition(sc);
 
+                boolean[][] possibleMoves = chessMatch.possibleMoves(source);
+                UI.clearScreen();
+                UI.printBoard(chessMatch.getPieces(), possibleMoves);
                 System.out.println();
                 System.out.print("Para qual casa: ");
                 ChessPosition target = UI.readChessPosition(sc);
